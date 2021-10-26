@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Wiki Tour Guide",
+    "slug": "wikitourguide",
+    "description": "Wiki Tour Guide kennt über 700.000 deutsprachige (und über 1M englischsprachige) Artikel und findet genau diejenigen, die sich auf Dinge in deiner näheren Umgebung beziehen. Sobald der Tour Guide deine Umgebung analysiert und dir spannende Artikel vorgeschlagen hat, beginnt eine digitale Reise durch deine Gegend auf der dich der Wiki Tour Guide mit seiner Stimme begleitet.",
+    "version": "1.2.3",
+    "owner": "pascalraszyk",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "wtg",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "appStoreUrl": "https://apps.apple.com/de/app/wikitourguide/id1587761365",
+      "bundleIdentifier": "org.wikitourguide.app",
+      "buildNumber": "1.2.4",
+      "config": {
+        "googleMapsApiKey": "__REDACTED__"
+      }
+    },
+    "android": {
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.wikitourguide.app",
+      "config": {
+        "googleMaps": {
+          "apiKey": "__REDACTED__"
+        }
+      },
+      "permissions": [
+        "LOCATION_FOREGROUND",
+        "ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "org.wikitourguide.app",
+      "versionCode": 124
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    }
+  }
+}

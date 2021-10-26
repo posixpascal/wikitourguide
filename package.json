@@ -1,0 +1,64 @@
+{
+  "name": "wikitourguide",
+  "license": "MIT",
+  "scripts": {
+    "release": "semantic-release --no-ci"
+  },
+  "dependencies": {
+    "@google-cloud/text-to-speech": "^3.3.1",
+    "axios": "^0.22.0",
+    "dotenv": "^10.0.0",
+    "mongoose": "^6.0.8",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "semantic-release": "^18.0.0",
+    "semantic-release-expo": "^2.2.3"
+  },
+  "verifyConditions": [
+    "semantic-release-expo",
+    "@semantic-release/changelog"
+  ],
+  "release": {
+    "analyzeCommits": "@semantic-release/commit-analyzer",
+    "verifyConditions": false,
+    "generateNotes": "@semantic-release/release-notes-generator",
+    "publish": false,
+    "success": false,
+    "prepare": {
+      "path": "semantic-release-expo",
+      "manifests": [
+        "packages/app/app.json"
+      ],
+      "versions": {
+        "version": "${next.raw}",
+        "android": "${code}",
+        "ios": "${next.raw}"
+      }
+    },
+    "fail": false,
+    "dryRun": false,
+    "release": "semantic-release-expo",
+    "branches": [
+      "trunk"
+    ],
+    "addChannel": false,
+    "npmPublish": true
+  },
+  "prepare": [
+    {
+      "path": "semantic-release-expo",
+      "manifests": [
+        "packages/app/app.json"
+      ],
+      "versions": {
+        "version": "${next.raw}",
+        "android": "${code}",
+        "ios": "${next.raw}"
+      }
+    },
+    "@semantic-release/changelog"
+  ],
+  "version": "1.0.0"
+}

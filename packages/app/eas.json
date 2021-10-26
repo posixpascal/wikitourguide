@@ -1,0 +1,22 @@
+{
+  "build": {
+    "release": {},
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./keys/api-5387814991504767859-194385-6d0027dcce37.json",
+        "track": "production"
+      },
+      "ios": {
+        "companyName": "Pascal Raszyk",
+        "language": "de-DE",
+        "appleId": "pascal@raszyk.de"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.idea/
+node_modules/
+config/
+config/terraform/
+.env
+yarn-error.log
+.DS_Store
+.expo
+package-lock.json
